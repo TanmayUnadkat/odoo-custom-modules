@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!--
+            Pre-create the "Stock Alerts" mailing list.
+            noupdate="1" means this record is only created on first install
+            and will NOT be overwritten on module upgrades.
+
+            After installing the module:
+              Website Editor  → add the "Newsletter" snippet to any page
+              → select "Stock Alerts" as the mailing list
+              → guests & logged-in users can subscribe directly from the website.
+        -->
+        <record id="mailing_list_stock_alerts" model="mailing.list">
+            <field name="name">Stock Alerts</field>
+            <field name="is_public">True</field>
+        </record>
+
+    </data>
+</odoo>

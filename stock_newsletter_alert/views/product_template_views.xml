@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_product_template_stock_alert_tab" model="ir.ui.view">
+        <field name="name">product.template.stock.alert.tab</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Stock Alert" name="stock_alert_tab">
+                    <group string="Newsletter Alert Settings">
+                        <field name="stock_alert_threshold"
+                               string="Alert Threshold (Qty)"
+                               help="A low-stock newsletter alert is sent when available qty falls below this value. Set to 0 to disable alerts for this product."/>
+                        <field name="low_stock_alert_sent"
+                               string="Low Stock Alert Sent"
+                               readonly="1"
+                               help="Managed automatically. True = a low-stock alert was sent and we are waiting for stock to recover above the threshold."/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
