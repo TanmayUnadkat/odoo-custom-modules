@@ -26,5 +26,5 @@ Custom Odoo modules built by **Tanmay Unadkat** (Odoo Developer, 2 Years Experie
 
 ## 👤 Author
 **Tanmay Unadkat**  
-📧 your@email.com  
-💼 linkedin.com/in/yourprofile
+📧 unadkattanmay2001@gmail.com  
+💼 https://www.linkedin.com/in/tanmay-u
